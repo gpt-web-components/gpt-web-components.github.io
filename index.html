@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>GPT Web Component</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="./elements/copy-paste.js"></script>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto 1fr;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background: beige;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: whitesmoke
+        }
+
+        copy-paste {
+            display: block;
+            margin: 1rem;
+            padding: 1rem;
+            border: 1px solid black;
+            border-radius: 5px;
+            background: white;
+            box-shadow: 0 0 5px 0px black;
+            cursor: copy;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>GPT Web Components</h1>
+    </section>
+    <section>
+        <h2>Prompts to click-to-copy then paste</h2>
+        <copy-paste>create a &lt;show-jsfiddle> Web Component, taking one attribute for the JSFiddle ID, then display it
+            embedded in an HTML
+            page
+        </copy-paste>
+        <copy-paste>
+            Create a &lt;copy-paste> Web Component where all innerHTML in lightDOM is copied to the buffer with a click
+            on a button
+            with an SVG icon in the top right
+        </copy-paste>
+    </section>
+    <section>
+        <h2>OpenAI ChatGPT:</h2>
+        <iframe src="https://chat.openai.com/g/g-quK0nMtwZ-create-or-refactor-your-web-component"></iframe>
+    </section>
+
+</html>
